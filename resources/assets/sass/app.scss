@@ -4,3 +4,83 @@
 
 // Variables
 @import "variables";
+
+@mixin	transitionEaseInOut {
+	$second: 0.3s;
+	$animate: ease-in-out;
+	transition: all $second $animate;
+	-moz-transition: all $second $animate;
+    -o-transition: all $second $animate;
+    -webkit-transition: all $second $animate;
+    -ms-transition: all $second $animate;
+}
+
+body {
+	font-family: "Raleway", 微軟正黑體, sans-serif;
+}
+
+// dropdown
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 3px 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #292b2c;
+    text-align: inherit;
+    white-space: nowrap;
+    background: 0 0;
+    border: 0;
+}
+
+/*
+ * topbar
+ */
+.topbar {
+	margin-bottom: 2px;
+
+	.container {
+		position: relative;
+		text-align: right;
+	}
+
+	.inline-group > div {
+		display: inline-block;
+	}
+
+	a {
+		color: #636b6f;
+	}
+
+	.navbar-form {
+		padding-right: 0;
+
+		&[role="search"] input {
+			background-color: #e5e5e5;
+		}
+	}
+
+	.lang {
+		@include transitionEaseInOut;
+
+		i {
+			margin-right: 10px;
+		}
+
+		.dropdown-menu {
+			min-width: 140px;
+		}
+	}
+}
+
+/*
+ * navbar
+ */
+nav {
+	max-height: 50px;
+	
+	.container {
+		position: relative;
+    	z-index: 3;
+	}
+}

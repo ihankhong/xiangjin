@@ -1,2 +1,77 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
+
+body {
+  font-family: "Raleway", 微軟正黑體, sans-serif;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 3px 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #292b2c;
+  text-align: inherit;
+  white-space: nowrap;
+  background: 0 0;
+  border: 0;
+}
+
+/*
+ * topbar
+ */
+
+.topbar {
+  margin-bottom: 2px;
+}
+
+.topbar .container {
+  position: relative;
+  text-align: right;
+}
+
+.topbar .inline-group > div {
+  display: inline-block;
+}
+
+.topbar a {
+  color: #636b6f;
+}
+
+.topbar .navbar-form {
+  padding-right: 0;
+}
+
+.topbar .navbar-form[role="search"] input {
+  background-color: #e5e5e5;
+}
+
+.topbar .lang {
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.topbar .lang i {
+  margin-right: 10px;
+}
+
+.topbar .lang .dropdown-menu {
+  min-width: 140px;
+}
+
+/*
+ * navbar
+ */
+
+nav {
+  max-height: 50px;
+}
+
+nav .container {
+  position: relative;
+  z-index: 3;
+}
 
