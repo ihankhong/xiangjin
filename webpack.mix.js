@@ -11,7 +11,11 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js');
+mix.js('resources/assets/js/app.js', 'public/js')
+	.extract(['lodash','jquery','axios','owl.carousel'])
+	.autoload({
+		jquery: ['$', 'jQuery', 'window.jQuery']
+	});
 
 mix.sass('resources/assets/sass/app.scss', 'public/css')
 	.sass('resources/assets/sass/vendor.scss', 'public/css');

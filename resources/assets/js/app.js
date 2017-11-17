@@ -9,3 +9,21 @@ require('./bootstrap');
 
 // window.Vue = require('vue');
 
+$(document).ready(function() {
+	$(".owl-carousel").owlCarousel({
+		items : 1,
+		loop : true,
+		autoplay : true,
+		navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+		animateOut: 'fadeOut',
+		animateIn: 'fadeIn',
+		responsive:{
+			0:{
+				nav:false,
+			},
+			768:{
+				nav:true,
+			}
+		}
+	});
+});

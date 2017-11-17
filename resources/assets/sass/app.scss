@@ -16,10 +16,19 @@
 }
 
 body {
-	font-family: "Raleway", 微軟正黑體, sans-serif;
+	padding-top: 103px;
+	font-family: "Raleway", "微軟正黑體", sans-serif;
 }
 
-// dropdown
+header {
+	&.navbar-fixed-top{
+		z-index: 3;
+	}
+}
+
+/*
+ * dropdown
+ */ 
 .dropdown-item {
     display: block;
     width: 100%;
@@ -38,6 +47,8 @@ body {
  */
 .topbar {
 	margin-bottom: 2px;
+	position: relative;
+	z-index: 5;
 
 	.container {
 		position: relative;
@@ -82,5 +93,33 @@ nav {
 	.container {
 		position: relative;
     	z-index: 3;
+	}
+
+	.logo {
+		position: absolute;
+		top: calc(50% - 40px);
+	}
+
+	ul {
+		&.nav {
+			> li {
+				font-size: 16px;
+				padding-top: 14px;
+				padding-bottom: 14px;
+
+				a {
+					padding: 0 15px;
+					font-weight: 700;
+					border-left: 1px solid #777;
+					@include transitionEaseInOut;
+				}
+
+				&:first-child {
+					a {
+						border-left: 0;
+					}
+				}
+			}
+		}
 	}
 }

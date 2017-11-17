@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<title>{{ config('app.name') }}</title>
-	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/vendor.css') }}" rel="stylesheet">
-	<script src="{{ asset('js/app.js') }}"></script>
+    <link href="{{ mix('css/vendor.css') }}" rel="stylesheet">
+	<link href="{{ mix('css/app.css') }}" rel="stylesheet">
+	<script src="{{ mix('/js/manifest.js') }}"></script>
+    <script src="{{ mix('/js/vendor.js') }}"></script>
+    <script src="{{ mix('/js/app.js') }}"></script>
 </head>
 <body>
-    <header id="navbar-top" class="navbar navbar-default navbar-fixed-top" style="z-index: 3;">
+    <header id="navbar-top" class="navbar navbar-default navbar-fixed-top">
         {{-- topbar begin --}}
-        <div class="topbar" style="position: relative;z-index: 5;">
+        <div class="topbar">
             <div class="container inline-group">
                 <div><a href="{{ route('home') }}">首頁</a></div>
                 <div class="form-inline">
                     <form class="navbar-form" role="search">
                         <div class="input-group">
                             {!! Form::text('search', null, ['class' => 'form-control','placeholder' => '全站搜尋']) !!}
-                            {{-- <input type="text" class="form-control" style="background-color: #e5e5e5;" placeholder="Search"> --}}
                             <span class="input-group-btn">
                                 <button type="reset" class="btn btn-default">
                                     <span class="glyphicon glyphicon-remove">
@@ -59,15 +60,15 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span> 
                         </button>
-                        <a href="{{ route('home') }}">
-                            <img class="img-responsive" src="{{ asset('images/logo.png') }}" alt="{{ config('app.name') }}" style="height: 50px;">
+                        <a href="{{ route('home') }}" class="logo">
+                            <img class="img-responsive" src="{{ asset('images/logo.png') }}" alt="{{ config('app.name') }}" style="height: 80px;">
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-7">
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <ul class="nav navbar-nav">
+                                    <ul class="nav navbar-nav pull-right">
                                         <li><a data-toggle="tab" href="#home">關於翔勁</a></li>
                                         <li><a data-toggle="tab" href="#menu1">最新消息</a></li>
                                         <li><a data-toggle="tab" href="#menu2">產品介紹</a></li>

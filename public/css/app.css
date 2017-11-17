@@ -1,8 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
 
 body {
-  font-family: "Raleway", 微軟正黑體, sans-serif;
+  padding-top: 103px;
+  font-family: "Raleway", "\5FAE\8EDF\6B63\9ED1\9AD4", sans-serif;
 }
+
+header.navbar-fixed-top {
+  z-index: 3;
+}
+
+/*
+ * dropdown
+ */
 
 .dropdown-item {
   display: block;
@@ -23,6 +32,8 @@ body {
 
 .topbar {
   margin-bottom: 2px;
+  position: relative;
+  z-index: 5;
 }
 
 .topbar .container {
@@ -73,5 +84,31 @@ nav {
 nav .container {
   position: relative;
   z-index: 3;
+}
+
+nav .logo {
+  position: absolute;
+  top: calc(50% - 40px);
+}
+
+nav ul.nav > li {
+  font-size: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+nav ul.nav > li a {
+  padding: 0 15px;
+  font-weight: 700;
+  border-left: 1px solid #777;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+nav ul.nav > li:first-child a {
+  border-left: 0;
 }
 
