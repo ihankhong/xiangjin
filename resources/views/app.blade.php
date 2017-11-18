@@ -17,8 +17,8 @@
         {{-- topbar begin --}}
         <div class="topbar">
             <div class="container inline-group">
-                <div><a href="{{ route('home') }}">首頁</a></div>
-                <div class="form-inline">
+                <div class="hidden-xs hidden-sm"><a href="{{ route('home') }}">首頁</a></div>
+                <div class="form-inline hidden-xs hidden-sm">
                     <form class="navbar-form" role="search">
                         <div class="input-group">
                             {!! Form::text('search', null, ['class' => 'form-control','placeholder' => '全站搜尋']) !!}
@@ -38,8 +38,7 @@
                     </form>
                 </div>
                 <div class="lang dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown"><i class="fa fa-globe" aria-hidden="true"></i>Languages</a>
-
+                    <a class="btn btn-secondary dropdown-toggle hidden-xs hidden-sm" id="dropdownMenuLink" data-toggle="dropdown"><i class="fa fa-globe" aria-hidden="true"></i>Languages</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="#">繁體中文</a>
                         <a class="dropdown-item" href="#">簡體中文</a>
@@ -54,21 +53,25 @@
         <nav role="navigation">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-5">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span> 
-                        </button>
-                        <a href="{{ route('home') }}" class="logo">
-                            <img class="img-responsive" src="{{ asset('images/logo.png') }}" alt="{{ config('app.name') }}" style="height: 80px;">
-                        </a>
+                    <div class="col-xs-12 col-md-4 col-lg-5">
+                        <div class="row">
+                            <a href="{{ route('home') }}" class="col-xs-10 col-md-12 logo">
+                                <img class="img-responsive" src="{{ asset('images/logo.png') }}" alt="{{ config('app.name') }}" />
+                            </a>
+                            <div class="col-xs-2">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span> 
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-7">
+                    <div class="col-xs-12 col-md-8 col-lg-7">
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <ul class="nav navbar-nav pull-right">
+                                    <ul class="nav navbar-nav">
                                         <li><a data-toggle="tab" href="#home">關於翔勁</a></li>
                                         <li><a data-toggle="tab" href="#menu1">最新消息</a></li>
                                         <li><a data-toggle="tab" href="#menu2">產品介紹</a></li>
