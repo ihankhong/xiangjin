@@ -29,9 +29,12 @@ $(document).ready(function () {
 		items: 1,
 		loop: true,
 		autoplay: true,
+		autoplayHoverPause: true,
+		dots: false,
+		nav: true,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-		animateOut: 'fadeOut',
-		animateIn: 'fadeIn',
+		animateOut: 'slideOutDown',
+		animateIn: 'bounceInRight',
 		responsive: {
 			0: {
 				nav: false
@@ -47,9 +50,8 @@ $(document).ready(function () {
 /***/ }),
 
 /***/ 13:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {
 window._ = __webpack_require__(3);
 
@@ -93,7 +95,7 @@ if (token) {
  * https://github.com/OwlCarousel2/OwlCarousel2
  */
 __webpack_require__(10);
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 

@@ -5,7 +5,7 @@
 // Variables
 @import "variables";
 
-@mixin	transitionEaseInOut {
+@mixin transitionEaseInOut {
 	$second: 0.3s;
 	$animate: ease-in-out;
 	transition: all $second $animate;
@@ -13,6 +13,14 @@
     -o-transition: all $second $animate;
     -webkit-transition: all $second $animate;
     -ms-transition: all $second $animate;
+}
+
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	-moz-opacity: $opacity;
+    -khtml-opacity: $opacity;
+	filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 body {
@@ -24,6 +32,44 @@ header {
 	&.navbar-fixed-top{
 		z-index: 3;
 	}
+}
+
+%all-transition {
+	@include transitionEaseInOut;
+}
+%all-a {
+	text-decoration: none;
+    color: #000;
+    outline: none;
+    @include opacity(0.8);
+}
+
+a {
+	@extend %all-transition;
+
+	&:hover {
+		@extend %all-a;
+	}
+
+	&:focus {
+		@extend %all-a;
+	}
+
+	&:active {
+		@extend %all-a;
+	}
+}
+
+h3 {
+	@extend %all-transition;
+
+	&:after {
+		@extend %all-transition;
+	}
+}
+
+img {
+	@extend %all-transition;
 }
 
 /*
@@ -72,7 +118,7 @@ header {
 	}
 
 	.lang {
-		@include transitionEaseInOut;
+		@extend %all-transition;
 
 		i {
 			margin-right: 10px;
@@ -108,10 +154,10 @@ nav {
 				padding-bottom: 14px;
 
 				a {
+					@extend %all-transition;
 					padding: 0 15px;
 					font-weight: 700;
 					border-left: 1px solid #777;
-					@include transitionEaseInOut;
 				}
 
 				&:first-child {
@@ -121,5 +167,168 @@ nav {
 				}
 			}
 		}
+	}
+}
+
+/*
+ * slider
+ */
+.owl-theme {
+	.owl-nav {
+		margin-top: 0;
+
+		[class*='owl-'] {
+		    margin: 0;
+		    width: 50px;
+		    height: 50px;
+		    text-align: center;
+		    border-radius: 50%;
+		    font-size: 20px;
+		    background-color: #fff;
+		    color: #777;
+		    position: absolute;
+		    top: 50%;
+		    margin-top: -25px;
+		    transition: all 1s ease;
+
+		    i {
+		    	margin-top: 12px;
+		    }
+		}
+
+		.owl-prev {
+			left: 30px;
+		}
+
+		.owl-next {
+		    right: 30px;
+		}
+	}
+}
+
+/*
+ * 首頁三個區塊圖
+ */
+.index-block {
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+
+		> a {
+		    color: #333;
+		    display: block;
+		    height: 20vw;
+		    min-height: 300px;
+		    padding: 40px;
+		    @include opacity(1);
+
+			&.pd {
+			    background: url(#{$img-path}home/product.png) no-repeat center/cover;
+			}
+
+			&.rd {
+				color: #fff;
+				background: url(#{$img-path}home/RD-design.png) no-repeat center/cover;
+			}
+
+			&.er {
+				background: url(#{$img-path}home/EX-experience.png) no-repeat center/cover;
+			}
+
+			> div {
+				height: 100%;
+	    		width: 45%;
+
+	    		h3 {
+	    			margin-top: 0;
+	    			font-weight: bold;
+				    font-size: 28px;
+				    line-height: 35px;
+	    		}
+
+	    		p {
+				    font-size: 15px;
+				    line-height: 25px;
+				    margin-top: 5px;
+	    		}
+
+	    		span {
+	    			@extend %all-transition;
+	    			color: #fff;
+	    			display: inline-block;
+				    padding: 7px 20px;
+				    margin-top: 15px;
+				    font-weight: bold;
+				    font-size: 15px;
+				    background-color: #0068b7;
+				    border: 1px solid #797979;
+				    cursor: pointer;
+	    		}
+			}
+
+			&:hover {
+		    	@include opacity(0.9);
+
+		    	> div {
+		    		span {
+		    			background-color: #000;
+		    		}
+		    	}
+		    }
+		}
+	}
+}
+
+.divTable {
+    display: table;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+
+    .divTableCell {
+	    display: table-cell;
+	    width: 100%;
+	    height: 100%;
+	    vertical-align: middle;
+	}
+}
+
+/*
+ * footer
+ */
+footer {
+	padding-top: 33px;
+	padding-bottom: 23px;
+	background: #5a5a5a;
+
+	.footer-contact {
+		color: #fff;
+	    line-height: 25px;
+	    font-size: 16px;
+
+	    > div {
+	    	line-height: 21px;
+    		margin-bottom: 0;
+
+    		span {
+    			font-size: 15px;
+			    line-height: 30px;
+			    display: inline-block;
+			    margin-right: 10px;
+
+			    > i {
+			    	font-size: 12px;
+    				margin-right: 5px;
+			    }
+
+			    > a {
+			    	color: #fff;
+
+			    	&:hover {
+			    		color: #0448ac;
+			    	}
+			    }
+    		}
+	    }
 	}
 }

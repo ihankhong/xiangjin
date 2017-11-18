@@ -85,48 +85,28 @@
         </nav>
         {{-- nav end --}}
     </header>
+    {{-- content begin --}}
 	@yield('content')
-	<footer class="navbar">
-        <p class="text-center">Copyright © 金彩168 彩票网Reserved</p>
-    </footer>
-    @yield('script')
-</body>
-</html>
-
-
-{{-- <nav class="nav navbar-default">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-5">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span> 
-                        </button>
-                        <a href="{{ route('home') }}">
-                            <img class="img-responsive" src="{{ asset('images/logo.png') }}" alt="{{ config('app.name') }}">
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-sm-7">
-                        <div class="collapse navbar-collapse" id="myNavbar">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <ul class="nav navbar-nav">
-                                        <li><a data-toggle="tab" href="#home">Home</a></li>
-                                        <li><a data-toggle="tab" href="#menu1">Page 1</a></li>
-                                        <li><a data-toggle="tab" href="#menu2">Page 2</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-12">
-                                    <ul class="nav navbar-nav">
-                                        <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</a></li>
-                                        <li><a href="#">Log out</a></li>
-                                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Admin</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+    {{-- content end --}}
+    {{-- footer begin --}}
+	<footer>
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="footer-contact">
+                    <div><span>翔勁金屬  模具開發的領先者    S.G. Carbide Die Co. , Ltd.</span></div>
+                    <div><span>NO. 53-1, Lane 754, Sec.2, Chang-Ho Rd., Ho-Mei, Changhua 508, Taiwan</span></div>
+                    <div>
+                        <span class="telephone"><i class="fa fa-phone"></i> <a href="+88647360805">+886 ( 4 ) 7360805</a></span>
+                        <span class="faxNumber"><i class="fa fa-fax"></i> +886 ( 4 ) 7350874</span>
+                        <span class="email"><i class="fa fa-envelope-o"></i> <a href="mailto:sgcarbide@sgcarbide.com.tw">sgcarbide@sgcarbide.com.tw</a></span>
                     </div>
                 </div>
             </div>
-        </nav> --}}
+        </div>
+    </footer>
+    {{-- footer end --}}
+    {{-- script begin --}}
+    @yield('script')
+    {{-- script end --}}
+</body>
+</html>
