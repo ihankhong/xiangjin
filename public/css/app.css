@@ -29,6 +29,8 @@ a,
 h3,
 h3:after,
 img,
+li,
+input,
 .topbar .lang,
 nav ul.navbar-nav > li a,
 .index-block .row > a > div span {
@@ -110,6 +112,12 @@ a:active {
 
 .topbar .lang .dropdown-menu {
   min-width: 140px;
+}
+
+@media all and (max-width: 1199px) {
+  .topbar .container {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 991px) {
@@ -246,6 +254,12 @@ nav ul.navbar-nav > li:first-child a {
 
   nav .collapsing {
     overflow: hidden !important;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  nav .container {
+    width: 100%;
   }
 }
 
@@ -394,6 +408,17 @@ nav ul.navbar-nav > li:first-child a {
 
 .index-block .row > a:hover > div span {
   background-color: #000;
+}
+
+@media all and (max-width: 1199px) {
+  .index-block .row > a > div {
+    width: 60%;
+  }
+
+  .index-block .row > a > div h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 .divTable {

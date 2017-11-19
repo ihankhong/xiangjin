@@ -103,6 +103,14 @@ img {
 	@extend %all-transition;
 }
 
+li {
+	@extend %all-transition;
+}
+
+input {
+	@extend %all-transition;
+}
+
 /*
  * dropdown
  */ 
@@ -161,6 +169,12 @@ img {
 
 		.dropdown-menu {
 			min-width: 140px;
+		}
+	}
+
+	@include maxWidth($screen-md-max) {
+		.container {
+			width: 100%;
 		}
 	}
 
@@ -302,6 +316,12 @@ nav {
         .collapsing {
             overflow: hidden!important;
         }
+	}
+
+	@include maxWidth($screen-md-max) {
+		.container {
+			width: 100%;
+		}
 	}
 
 	@include maxWidth($screen-sm-max) {
@@ -452,6 +472,21 @@ nav {
 		    		}
 		    	}
 		    }
+		}
+	}
+
+	@include maxWidth($screen-md-max) {
+		.row {
+			> a {
+				> div {
+					width: 60%;
+
+					h3 {
+					    font-size: 25px;
+    					line-height: 30px;
+					}
+				}
+			}
 		}
 	}
 }

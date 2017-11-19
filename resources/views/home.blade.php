@@ -10,7 +10,7 @@
 	<section class="index-block">
 		<div class="container-full">
 			<div class="row">
-				<a href="#" class="col-xs-12 col-sm-4 pd">
+				<a href="#" class="col-md-4 pd">
 					<div class="divTable">
 	                    <div class="divTableCell">
 	                        <h3>產品介紹</h3>
@@ -19,7 +19,7 @@
 	                    </div>
 	                </div>
 				</a>
-				<a href="#" class="col-xs-12 col-sm-4 rd">
+				<a href="#" class="col-md-4 rd">
 					<div class="divTable">
 	                    <div class="divTableCell">
 	                        <h3>研發設計</h3>
@@ -28,7 +28,7 @@
 	                    </div>
 	                </div>
 				</a>
-				<a href="#" class="col-xs-12 col-sm-4 er">
+				<a href="#" class="col-md-4 er">
 					<div class="divTable">
 	                    <div class="divTableCell">
 	                        <h3>參展經歷</h3>

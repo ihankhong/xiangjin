@@ -95,7 +95,7 @@
 	<footer>
         <div class="container">
             <div class="col-xs-12">
-                <div class="footer-contact">
+                <div class="footer-contact text-center">
                     <div><span>翔勁金屬  模具開發的領先者    S.G. Carbide Die Co. , Ltd.</span></div>
                     <div><span>NO. 53-1, Lane 754, Sec.2, Chang-Ho Rd., Ho-Mei, Changhua 508, Taiwan</span></div>
                     <div>
