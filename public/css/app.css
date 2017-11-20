@@ -245,6 +245,7 @@ nav ul.navbar-nav > li:first-child a {
 
   nav .navbar-nav {
     float: none !important;
+    margin: 7px 15px;
   }
 
   nav .navbar-nav > li {
@@ -278,10 +279,6 @@ nav ul.navbar-nav > li:first-child a {
     padding-right: 0;
   }
 
-  nav .navbar-collapse .row > div .navbar-nav {
-    margin: 7px 0;
-  }
-
   nav .navbar-collapse .row > div .navbar-nav > li {
     border-bottom: 1px dashed #aaa;
   }
@@ -292,6 +289,12 @@ nav ul.navbar-nav > li:first-child a {
 
   nav .navbar-collapse .row > div .navbar-nav > li a {
     border-left: none;
+  }
+}
+
+@media all and (max-width: 767px) {
+  nav .navbar-nav {
+    margin: 7px 0;
   }
 }
 
@@ -571,6 +574,12 @@ footer .footer-contact > div span > a:hover {
 
   .tabpanel .sidebar h4 {
     background-repeat: unset;
+  }
+}
+
+@media all and (max-width: 449px) {
+  .tabpanel .sidebar h4:after {
+    background-repeat: repeat;
   }
 }
 

@@ -307,7 +307,7 @@ nav {
 
         .navbar-nav {
             float: none!important;
-            // margin: 7.5px -15px;
+            margin: 7px 15px;
 
             > li {
 	            float: none;
@@ -343,8 +343,6 @@ nav {
 					padding-right: 0;
 
 					.navbar-nav {
-						margin: 7px 0;
-						
 						> li {
 							border-bottom: 1px dashed #aaa;
 
@@ -359,6 +357,12 @@ nav {
 					}
 				}
 			}
+		}
+	}
+
+	@include maxWidth($screen-xs-max) {
+		.navbar-nav {
+			margin: 7px 0;
 		}
 	}
 
@@ -640,6 +644,16 @@ footer {
 
 			h4 {
 				background-repeat: unset;
+			}
+		}
+	}
+
+	@include maxWidth($screen-xss-max) {
+		.sidebar {
+			h4 {
+				&:after {
+					background-repeat: repeat;
+				}
 			}
 		}
 	}

@@ -16,3 +16,4 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('about', 'AboutController@index')->name('about');
+Route::get('news', 'NewController@index')->name('news');
