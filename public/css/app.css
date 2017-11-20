@@ -245,7 +245,6 @@ nav ul.navbar-nav > li:first-child a {
 
   nav .navbar-nav {
     float: none !important;
-    margin: 7.5px -15px;
   }
 
   nav .navbar-nav > li {
@@ -277,6 +276,10 @@ nav ul.navbar-nav > li:first-child a {
   nav .navbar-collapse .row > div {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  nav .navbar-collapse .row > div .navbar-nav {
+    margin: 7px 0;
   }
 
   nav .navbar-collapse .row > div .navbar-nav > li {
@@ -542,7 +545,7 @@ footer .footer-contact > div span > a:hover {
   height: 20px;
   margin-top: 14px;
   position: relative;
-  z-index: 3;
+  z-index: 2;
   background: url(/images/page/sidebar/bottom-arrow.png) no-repeat center center;
 }
 
@@ -553,6 +556,22 @@ footer .footer-contact > div span > a:hover {
 
 .tabpanel .tab-content .content {
   font-size: 16px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .tabpanel .container {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .tabpanel .sidebar {
+    min-height: auto;
+  }
+
+  .tabpanel .sidebar h4 {
+    background-repeat: unset;
+  }
 }
 
 .nav-pills > li.active > a,

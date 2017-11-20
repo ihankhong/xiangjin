@@ -307,7 +307,7 @@ nav {
 
         .navbar-nav {
             float: none!important;
-            margin: 7.5px -15px;
+            // margin: 7.5px -15px;
 
             > li {
 	            float: none;
@@ -343,6 +343,8 @@ nav {
 					padding-right: 0;
 
 					.navbar-nav {
+						margin: 7px 0;
+						
 						> li {
 							border-bottom: 1px dashed #aaa;
 
@@ -609,7 +611,7 @@ footer {
 				height: 20px;
 				margin-top: 14px;
 				position: relative;
-				z-index: 3;
+				z-index: 2;
 				background: url(#{$img-path}page/sidebar/bottom-arrow.png) no-repeat center center;
 			}
 		}
@@ -623,6 +625,22 @@ footer {
 
 		.content {
 			font-size: 16px;
+		}
+	}
+
+	@include rangeWidth($screen-sm-min,$screen-sm-max) {
+		.container {
+			width: 100%;
+		}
+	}
+
+	@include maxWidth($screen-xs-max) {
+		.sidebar {
+			min-height: auto;
+
+			h4 {
+				background-repeat: unset;
+			}
 		}
 	}
 }
