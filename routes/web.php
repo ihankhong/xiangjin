@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::get('about', 'AboutController@index')->name('about');
 Route::get('news', 'NewController@index')->name('news');
 Route::get('rddesign', 'RdDesignController@index')->name('rddesign');
+Route::get('product', 'ProductController@index')->name('product');
