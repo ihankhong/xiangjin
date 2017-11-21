@@ -561,6 +561,53 @@ footer .footer-contact > div span > a:hover {
   font-size: 16px;
 }
 
+.tabpanel .tab-content .product-wrap h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.tabpanel .tab-content .product-wrap h4 > i {
+  margin-right: 5px;
+}
+
+.tabpanel .tab-content .product-wrap h4 > span {
+  text-transform: uppercase;
+}
+
+.tabpanel .tab-content .product-wrap .wrap {
+  padding: 12px 12px 0;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.tabpanel .tab-content .product-wrap .wrap .product {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.tabpanel .tab-content .product-wrap .wrap .product > img {
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.tabpanel .tab-content .product-wrap .wrap h5 {
+  font-size: 16px;
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
   .tabpanel .container {
     width: 100%;

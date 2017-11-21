@@ -28,6 +28,14 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity})";
 }
 
+@mixin borderRadius($size) {
+	border-radius: #{$size}px;
+	-webkit-border-radius: #{$size}px;
+	-moz-border-radius: #{$size}px;
+	-ms-border-radius: #{$size}px;
+	-o-border-radius: #{$size}px;
+}
+
 @mixin rangeWidth($minWidth,$maxWidth) {
 	@media all and (min-width:$minWidth) and (max-width: $maxWidth) {
         @content;
@@ -629,6 +637,43 @@ footer {
 
 		.content {
 			font-size: 16px;
+		}
+
+		.product-wrap {
+			h4 {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				font-weight: 700;
+
+				> i {
+					margin-right: 5px;
+				}
+
+				> span {
+					text-transform: uppercase;
+				}
+			}
+
+			.wrap {
+				padding: 12px 12px 0;
+				background-color: #f0f0f0;
+				@include borderRadius(5);
+
+				.product {
+					padding: 10px;
+					background-color: #fff;
+					@include borderRadius(5);
+
+					> img {
+						border: 2px solid #f0f0f0;
+						@include borderRadius(5);
+					}
+				}
+
+				h5 {
+					font-size: 16px;
+				}
+			}
 		}
 	}
 
