@@ -30,7 +30,7 @@
                                 <div class="col-xs-12 col-sm-6">
                                     <div class="wrap clearfix">
                                         <div class="product">
-                                            <img class="img-responsive" src="{{ asset('images/page/product/product-1.jpg') }}" />
+                                            <img class="img-responsive center-block" src="{{ asset('images/page/product/product-1.jpg') }}" />
                                         </div>
                                         <h5 class="text-center">模具</h5>
                                     </div>
@@ -38,7 +38,39 @@
                                 <div class="col-xs-12 col-sm-6">
                                     <div class="wrap clearfix">
                                         <div class="product">
-                                            <img class="img-responsive" src="{{ asset('images/page/product/product-1.jpg') }}" />
+                                            <img class="img-responsive center-block" src="{{ asset('images/page/product/product-1.jpg') }}" />
+                                        </div>
+                                        <h5 class="text-center">拼接多片模</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="wrap clearfix">
+                                        <div class="product">
+                                            <img class="img-responsive center-block" src="{{ asset('images/page/product/product-1.jpg') }}" />
+                                        </div>
+                                        <h5 class="text-center">拼接多片模</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="wrap clearfix">
+                                        <div class="product">
+                                            <img class="img-responsive center-block" src="{{ asset('images/page/product/product-1.jpg') }}" />
+                                        </div>
+                                        <h5 class="text-center">拼接多片模</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="wrap clearfix">
+                                        <div class="product">
+                                            <img class="img-responsive center-block" src="{{ asset('images/page/product/product-1.jpg') }}" />
+                                        </div>
+                                        <h5 class="text-center">拼接多片模</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="wrap clearfix">
+                                        <div class="product">
+                                            <img class="img-responsive center-block" src="{{ asset('images/page/product/product-1.jpg') }}" />
                                         </div>
                                         <h5 class="text-center">拼接多片模</h5>
                                     </div>

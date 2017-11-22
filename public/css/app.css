@@ -526,6 +526,10 @@ footer .footer-contact > div span > a:hover {
  * pill
  */
 
+.tabpanel {
+  margin-bottom: 20px;
+}
+
 .tabpanel .sidebar {
   min-height: 300px;
   background-color: #efefef;
@@ -575,6 +579,10 @@ footer .footer-contact > div span > a:hover {
   text-transform: uppercase;
 }
 
+.tabpanel .tab-content .product-wrap .row > div {
+  margin-bottom: 15px;
+}
+
 .tabpanel .tab-content .product-wrap .wrap {
   padding: 12px 12px 0;
   background-color: #f0f0f0;
@@ -606,6 +614,7 @@ footer .footer-contact > div span > a:hover {
 
 .tabpanel .tab-content .product-wrap .wrap h5 {
   font-size: 16px;
+  font-weight: 700;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
