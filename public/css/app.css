@@ -35,6 +35,7 @@ input,
 .topbar .lang,
 nav ul.navbar-nav > li a,
 .index-block .row > a > div span,
+.tabpanel .tab-content .product-wrap a:hover .wrap,
 .nav-pills > li,
 .nav-pills > li > a,
 .nav-pills > li.active > a {
@@ -579,8 +580,38 @@ footer .footer-contact > div span > a:hover {
   text-transform: uppercase;
 }
 
-.tabpanel .tab-content .product-wrap .row > div {
+.tabpanel .tab-content .product-wrap > .row > div {
   margin-bottom: 15px;
+}
+
+.tabpanel .tab-content .product-wrap > .row.single .wrap {
+  padding-bottom: 12px;
+}
+
+.tabpanel .tab-content .product-wrap > .row.single h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #f0f0f0;
+}
+
+.tabpanel .tab-content .product-wrap > .row.single h5 span {
+  color: #fff;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #333;
+  position: relative;
+  top: -1px;
+}
+
+.tabpanel .tab-content .product-wrap > .row.single h5 span i {
+  margin-right: 5px;
 }
 
 .tabpanel .tab-content .product-wrap .wrap {
@@ -613,8 +644,17 @@ footer .footer-contact > div span > a:hover {
 }
 
 .tabpanel .tab-content .product-wrap .wrap h5 {
+  color: #333;
   font-size: 16px;
   font-weight: 700;
+}
+
+.tabpanel .tab-content .product-wrap a:hover .wrap {
+  background-color: #0068b7;
+}
+
+.tabpanel .tab-content .product-wrap a:hover .wrap h5 {
+  color: #fff;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {

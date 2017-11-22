@@ -656,9 +656,41 @@ footer {
 				}
 			}
 
-			.row {
+			> .row {
 				> div {
 					margin-bottom: 15px;
+				}
+
+				&.single {
+					.wrap {
+						padding-bottom: 12px;
+					}
+
+					h5 {
+						margin-top: 0;
+						margin-bottom: 0;
+						padding-top: 11px;
+						padding-bottom: 11px;
+						font-size: 16px;
+						font-weight: 700;
+						background-color: #f0f0f0;
+
+						span {
+							color: #fff;
+							padding-left: 6px;
+							padding-right: 6px;
+							margin-right: 5px;
+							font-size: 13px;
+							text-transform: uppercase;
+							background-color: #333;
+							position: relative;
+							top: -1px;
+
+							i {
+								margin-right: 5px;
+							}
+						}
+					}
 				}
 			}
 
@@ -679,8 +711,22 @@ footer {
 				}
 
 				h5 {
+					color: #333;
 					font-size: 16px;
 					font-weight: 700;
+				}
+			}
+			
+			a {
+				&:hover {
+					.wrap {
+						@extend %all-transition;
+						background-color: #0068b7;
+
+						h5 {
+							color: #fff;
+						}
+					}
 				}
 			}
 		}
