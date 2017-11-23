@@ -10,4 +10,9 @@ class NewController extends Controller
     {
     	return view('news.index');
     }
+
+    public function article()
+    {
+    	return view('news.article');
+    }
 }

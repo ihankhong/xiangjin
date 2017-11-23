@@ -26,7 +26,7 @@
 										</div>
 										<div class="col-xs-6 col-sm-3">
 											<div class="btns">
-												<button type="button" class="btn btn-primary btn-block">了解更多</button>
+												<a href="{{ route('news.article') }}" class="btn btn-primary btn-block">了解更多</a>
 											</div>
 										</div>
 									</div>
@@ -41,7 +41,7 @@
 										</div>
 										<div class="col-xs-6 col-sm-3">
 											<div class="btns">
-												<button type="button" class="btn btn-primary btn-block">了解更多</button>
+												<a href="{{ route('news.article') }}" class="btn btn-primary btn-block">了解更多</a>
 											</div>
 										</div>
 									</div>
@@ -56,7 +56,7 @@
 										</div>
 										<div class="col-xs-6 col-sm-3">
 											<div class="btns">
-												<button type="button" class="btn btn-primary btn-block">了解更多</button>
+												<a href="{{ route('news.article') }}" class="btn btn-primary btn-block">了解更多</a>
 											</div>
 										</div>
 									</div>
@@ -71,7 +71,7 @@
 										</div>
 										<div class="col-xs-6 col-sm-3">
 											<div class="btns">
-												<button type="button" class="btn btn-primary btn-block">了解更多</button>
+												<a href="{{ route('news.article') }}" class="btn btn-primary btn-block">了解更多</a>
 											</div>
 										</div>
 									</div>
@@ -86,7 +86,7 @@
 										</div>
 										<div class="col-xs-6 col-sm-3">
 											<div class="btns">
-												<button type="button" class="btn btn-primary btn-block">了解更多</button>
+												<a href="{{ route('news.article') }}" class="btn btn-primary btn-block">了解更多</a>
 											</div>
 										</div>
 									</div>
@@ -101,7 +101,7 @@
 										</div>
 										<div class="col-xs-6 col-sm-3">
 											<div class="btns">
-												<button type="button" class="btn btn-primary btn-block">了解更多</button>
+												<a href="{{ route('news.article') }}" class="btn btn-primary btn-block">了解更多</a>
 											</div>
 										</div>
 									</div>

@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::get('about', 'AboutController@index')->name('about');
 Route::get('news', 'NewController@index')->name('news');
+Route::get('news/article', 'NewController@article')->name('news.article');
 Route::get('rddesign', 'RdDesignController@index')->name('rddesign');
 Route::get('product', 'ProductController@index')->name('product');
 Route::get('product/single', 'ProductController@single')->name('product.single');
