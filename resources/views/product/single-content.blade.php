@@ -28,7 +28,7 @@
                     <div class="col-xs-12 col-sm-6">
                       <div class="wrap clearfix">
                         <div class="product">
-                          <img class="img-responsive center-block" src="{{ asset('images/page/product/product-1.jpg') }}" />
+                          <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                         </div>
                       </div>
                     </div>
@@ -47,7 +47,7 @@
                     <div class="col-xs-12 col-sm-6">
                       <div class="wrap clearfix">
                         <div class="product">
-                          <img class="img-responsive center-block" src="{{ asset('images/page/product/product-2.jpg') }}" />
+                          <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                         </div>
                       </div>
                     </div>
@@ -61,7 +61,7 @@
                     <div class="col-xs-12 col-sm-6">
                       <div class="wrap clearfix">
                         <div class="product">
-                          <img class="img-responsive center-block" src="{{ asset('images/page/product/product-3.jpg') }}" />
+                          <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                         </div>
                       </div>
                     </div>
@@ -75,7 +75,7 @@
                     <div class="col-xs-12 col-sm-6">
                       <div class="wrap clearfix">
                         <div class="product">
-                          <img class="img-responsive center-block" src="{{ asset('images/page/product/product-4.jpg') }}" />
+                          <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                         </div>
                       </div>
                     </div>
@@ -89,7 +89,7 @@
                     <div class="col-xs-12 col-sm-6">
                       <div class="wrap clearfix">
                         <div class="product">
-                          <img class="img-responsive center-block" src="{{ asset('images/page/product/product-5.jpg') }}" />
+                          <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                         </div>
                       </div>
                     </div>
@@ -103,7 +103,7 @@
                     <div class="col-xs-12 col-sm-6">
                       <div class="wrap clearfix">
                         <div class="product">
-                          <img class="img-responsive center-block" src="{{ asset('images/page/product/product-6.jpg') }}" />
+                          <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                         </div>
                       </div>
                     </div>

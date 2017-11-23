@@ -614,6 +614,22 @@ footer .footer-contact > div span > a:hover {
   margin-right: 5px;
 }
 
+.tabpanel .tab-content .product-wrap > .row.single .content p {
+  padding-left: 20px;
+  position: relative;
+}
+
+.tabpanel .tab-content .product-wrap > .row.single .content p:before {
+  content: "\F04B";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .tabpanel .tab-content .product-wrap .wrap {
   padding: 12px 12px 0;
   background-color: #f0f0f0;
@@ -670,6 +686,10 @@ footer .footer-contact > div span > a:hover {
 
   .tabpanel .sidebar h4 {
     background-repeat: unset;
+  }
+
+  .tabpanel .tab-content .product-wrap > .row.single .wrap {
+    margin-bottom: 10px;
   }
 }
 

@@ -31,7 +31,7 @@
                                     <a href="{{ route('product.single') }}">
                                         <div class="wrap clearfix">
                                             <div class="product">
-                                                <img class="img-responsive center-block" src="{{ asset('images/page/product/product-1.jpg') }}" />
+                                                <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                                             </div>
                                             <h5 class="text-center">模具</h5>
                                         </div>
@@ -41,7 +41,7 @@
                                     <a href="{{ route('product.single') }}">
                                         <div class="wrap clearfix">
                                             <div class="product">
-                                                <img class="img-responsive center-block" src="{{ asset('images/page/product/product-2.jpg') }}" />
+                                                <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                                             </div>
                                             <h5 class="text-center">拼接多片模</h5>
                                         </div>
@@ -51,7 +51,7 @@
                                     <a href="{{ route('product.single') }}">
                                         <div class="wrap clearfix">
                                             <div class="product">
-                                                <img class="img-responsive center-block" src="{{ asset('images/page/product/product-3.jpg') }}" />
+                                                <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                                             </div>
                                             <h5 class="text-center">螺絲頭部成形切模</h5>
                                         </div>
@@ -61,7 +61,7 @@
                                     <a href="{{ route('product.single') }}">
                                         <div class="wrap clearfix">
                                             <div class="product">
-                                                <img class="img-responsive center-block" src="{{ asset('images/page/product/product-4.jpg') }}" />
+                                                <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                                             </div>
                                             <h5 class="text-center">TOES梅花模</h5>
                                         </div>
@@ -71,7 +71,7 @@
                                     <a href="{{ route('product.single') }}">
                                         <div class="wrap clearfix">
                                             <div class="product">
-                                                <img class="img-responsive center-block" src="{{ asset('images/page/product/product-5.jpg') }}" />
+                                                <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                                             </div>
                                             <h5 class="text-center">綜合模具(剪模.切模.夾爪)</h5>
                                         </div>
@@ -81,7 +81,7 @@
                                     <a href="{{ route('product.single') }}">
                                         <div class="wrap clearfix">
                                             <div class="product">
-                                                <img class="img-responsive center-block" src="{{ asset('images/page/product/product-6.jpg') }}" />
+                                                <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                                             </div>
                                             <h5 class="text-center">沖棒</h5>
                                         </div>
