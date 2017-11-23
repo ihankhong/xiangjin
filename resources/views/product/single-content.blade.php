@@ -25,16 +25,16 @@
               <div class="row single">
                 <div class="col-xs-12">
                   <div class="row">
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-md-6">
                       <div class="wrap clearfix">
                         <div class="product">
                           <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                         </div>
                       </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-md-6">
                       <h5><span><i class="fa fa-ban" aria-hidden="true"></i>PRODUCT</span>模具A</h5>
-                      <div class="content">
+                      <div class="content clearfix">
                         <p>SG以堅持不斷持續進步、達到最好的精神。提供高品質低成本的模具為使命。</p>
                         <p>經過多年不斷改善加工技術和提高模具使用壽命方面的豐富經驗，為客戶提供符合其需求的產品。</p>
                         <p>SG對鎢鋼合金的縱向拼合及橫向拼合的技巧。配合風孔由小至大型式設計減低模具內部的壓縮力。<br>我們提供CVD、PVD製程，等多種鍍層依據前方擠壓、後方擠壓、鈍粗等工法及被加工材料的材質來決定鍍層。鍍層前後拋光加工。</p>
@@ -44,71 +44,96 @@
                 </div>
                 <div class="col-xs-12">
                   <div class="row">
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-md-6">
                       <div class="wrap clearfix">
                         <div class="product">
                           <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                         </div>
                       </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-md-6">
                       <h5><span><i class="fa fa-ban" aria-hidden="true"></i>PRODUCT</span>模具B</h5>
+                      <div class="content clearfix">
+                        <p>SG以堅持不斷持續進步、達到最好的精神。提供高品質低成本的模具為使命。</p>
+                        <p>經過多年不斷改善加工技術和提高模具使用壽命方面的豐富經驗，為客戶提供符合其需求的產品。</p>
+                        <p>SG對鎢鋼合金的縱向拼合及橫向拼合的技巧。配合風孔由小至大型式設計減低模具內部的壓縮力。<br>我們提供CVD、PVD製程，等多種鍍層依據前方擠壓、後方擠壓、鈍粗等工法及被加工材料的材質來決定鍍層。鍍層前後拋光加工。</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-xs-12">
                   <div class="row">
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-md-6">
                       <div class="wrap clearfix">
                         <div class="product">
                           <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                         </div>
                       </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-md-6">
                       <h5><span><i class="fa fa-ban" aria-hidden="true"></i>PRODUCT</span>模具C</h5>
+                      <div class="content clearfix">
+                        <p>SG以堅持不斷持續進步、達到最好的精神。提供高品質低成本的模具為使命。</p>
+                        <p>經過多年不斷改善加工技術和提高模具使用壽命方面的豐富經驗，為客戶提供符合其需求的產品。</p>
+                        <p>SG對鎢鋼合金的縱向拼合及橫向拼合的技巧。配合風孔由小至大型式設計減低模具內部的壓縮力。<br>我們提供CVD、PVD製程，等多種鍍層依據前方擠壓、後方擠壓、鈍粗等工法及被加工材料的材質來決定鍍層。鍍層前後拋光加工。</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-xs-12">
                   <div class="row">
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-md-6">
                       <div class="wrap clearfix">
                         <div class="product">
                           <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                         </div>
                       </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-md-6">
                       <h5><span><i class="fa fa-ban" aria-hidden="true"></i>PRODUCT</span>模具D</h5>
+                      <div class="content clearfix">
+                        <p>SG以堅持不斷持續進步、達到最好的精神。提供高品質低成本的模具為使命。</p>
+                        <p>經過多年不斷改善加工技術和提高模具使用壽命方面的豐富經驗，為客戶提供符合其需求的產品。</p>
+                        <p>SG對鎢鋼合金的縱向拼合及橫向拼合的技巧。配合風孔由小至大型式設計減低模具內部的壓縮力。<br>我們提供CVD、PVD製程，等多種鍍層依據前方擠壓、後方擠壓、鈍粗等工法及被加工材料的材質來決定鍍層。鍍層前後拋光加工。</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-xs-12">
                   <div class="row">
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-md-6">
                       <div class="wrap clearfix">
                         <div class="product">
                           <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                         </div>
                       </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-md-6">
                       <h5><span><i class="fa fa-ban" aria-hidden="true"></i>PRODUCT</span>模具E</h5>
+                      <div class="content clearfix">
+                        <p>SG以堅持不斷持續進步、達到最好的精神。提供高品質低成本的模具為使命。</p>
+                        <p>經過多年不斷改善加工技術和提高模具使用壽命方面的豐富經驗，為客戶提供符合其需求的產品。</p>
+                        <p>SG對鎢鋼合金的縱向拼合及橫向拼合的技巧。配合風孔由小至大型式設計減低模具內部的壓縮力。<br>我們提供CVD、PVD製程，等多種鍍層依據前方擠壓、後方擠壓、鈍粗等工法及被加工材料的材質來決定鍍層。鍍層前後拋光加工。</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-xs-12">
                   <div class="row">
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-md-6">
                       <div class="wrap clearfix">
                         <div class="product">
                           <img class="img-responsive center-block" src="{{ asset('images/page/product/product.png') }}" />
                         </div>
                       </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-md-6">
                       <h5><span><i class="fa fa-ban" aria-hidden="true"></i>PRODUCT</span>模具F</h5>
+                      <div class="content clearfix">
+                        <p>SG以堅持不斷持續進步、達到最好的精神。提供高品質低成本的模具為使命。</p>
+                        <p>經過多年不斷改善加工技術和提高模具使用壽命方面的豐富經驗，為客戶提供符合其需求的產品。</p>
+                        <p>SG對鎢鋼合金的縱向拼合及橫向拼合的技巧。配合風孔由小至大型式設計減低模具內部的壓縮力。<br>我們提供CVD、PVD製程，等多種鍍層依據前方擠壓、後方擠壓、鈍粗等工法及被加工材料的材質來決定鍍層。鍍層前後拋光加工。</p>
+                      </div>
                     </div>
                   </div>
                 </div>

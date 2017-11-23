@@ -667,7 +667,6 @@ footer {
 
 					h5 {
 						margin-top: 0;
-						margin-bottom: 0;
 						padding-top: 11px;
 						padding-bottom: 11px;
 						font-size: 16px;
@@ -692,6 +691,8 @@ footer {
 					}
 
 					.content {
+						border-bottom: 1px solid #f0f0f0;
+						
 						p {
 							padding-left: 20px;
 							position: relative;
@@ -755,15 +756,7 @@ footer {
 		}
 	}
 
-	@include maxWidth($screen-xs-max) {
-		.sidebar {
-			min-height: auto;
-
-			h4 {
-				background-repeat: unset;
-			}
-		}
-
+	@include maxWidth($screen-sm-max) {
 		.tab-content {
 			.product-wrap {
 				> .row {
@@ -773,6 +766,16 @@ footer {
 						}
 					}
 				}
+			}
+		}
+	}
+
+	@include maxWidth($screen-xs-max) {
+		.sidebar {
+			min-height: auto;
+
+			h4 {
+				background-repeat: unset;
 			}
 		}
 	}

@@ -590,7 +590,6 @@ footer .footer-contact > div span > a:hover {
 
 .tabpanel .tab-content .product-wrap > .row.single h5 {
   margin-top: 0;
-  margin-bottom: 0;
   padding-top: 11px;
   padding-bottom: 11px;
   font-size: 16px;
@@ -612,6 +611,10 @@ footer .footer-contact > div span > a:hover {
 
 .tabpanel .tab-content .product-wrap > .row.single h5 span i {
   margin-right: 5px;
+}
+
+.tabpanel .tab-content .product-wrap > .row.single .content {
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .tabpanel .tab-content .product-wrap > .row.single .content p {
@@ -679,6 +682,12 @@ footer .footer-contact > div span > a:hover {
   }
 }
 
+@media all and (max-width: 991px) {
+  .tabpanel .tab-content .product-wrap > .row.single .wrap {
+    margin-bottom: 10px;
+  }
+}
+
 @media all and (max-width: 767px) {
   .tabpanel .sidebar {
     min-height: auto;
@@ -686,10 +695,6 @@ footer .footer-contact > div span > a:hover {
 
   .tabpanel .sidebar h4 {
     background-repeat: unset;
-  }
-
-  .tabpanel .tab-content .product-wrap > .row.single .wrap {
-    margin-bottom: 10px;
   }
 }
 
