@@ -676,6 +676,24 @@ footer .footer-contact > div span > a:hover {
   color: #fff;
 }
 
+.tabpanel .tab-content .news-wrap .wrap {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tabpanel .tab-content .news-wrap .wrap h4 {
+  font-weight: 700;
+}
+
+.tabpanel .tab-content .news-wrap .wrap .btns {
+  padding-top: 20px;
+}
+
+.tabpanel .tab-content .news-wrap .wrap:hover {
+  background-color: #f0f0f0;
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
   .tabpanel .container {
     width: 100%;
