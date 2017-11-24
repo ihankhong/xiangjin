@@ -16,12 +16,13 @@
 						<h2>公司情報</h2>
 						<div class="news-wrap clearfix">
 							@include('carousel.article-carousel')
-							{{-- <div class="row">
-								<div class="col-xs-12">
-									<div class="wrap clearfix">
-									</div>
+							<div class="article clearfix">
+								<h4>2017榮獲台灣精品獎之肯定</h4>
+								<label for="date">2017.01.01</label>
+								<div class="content">
+									<p></p>
 								</div>
-							</div> --}}
+							</div>
 						</div>
 					</div>
 					<div class="tab-pane" id="tab2" role="tabpanel">
