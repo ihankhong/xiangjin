@@ -15,32 +15,13 @@
 					<div class="tab-pane active" id="tab1" role="tabpanel">
 						<h2>公司情報</h2>
 						<div class="news-wrap clearfix">
-							<div class="row">
+							@include('carousel.article-carousel')
+							{{-- <div class="row">
 								<div class="col-xs-12">
 									<div class="wrap clearfix">
 									</div>
 								</div>
-								<div class="col-xs-12">
-									<div class="wrap clearfix">
-									</div>
-								</div>
-								<div class="col-xs-12">
-									<div class="wrap clearfix">
-									</div>
-								</div>
-								<div class="col-xs-12">
-									<div class="wrap clearfix">
-									</div>
-								</div>
-								<div class="col-xs-12">
-									<div class="wrap clearfix">
-									</div>
-								</div>
-								<div class="col-xs-12">
-									<div class="wrap clearfix">
-									</div>
-								</div>
-							</div>
+							</div> --}}
 						</div>
 					</div>
 					<div class="tab-pane" id="tab2" role="tabpanel">

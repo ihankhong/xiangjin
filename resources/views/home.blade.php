@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-	@include('carousel')
+	@include('carousel.carousel')
 	<section>
 		<div class="container-full">
 			<a href="#"><img class="img-responsive center-block" src="{{ asset('images/home/banner.png') }}" alt=""></a>
