@@ -53,6 +53,20 @@
   	}
 }
 
+%all-transition {
+	@include transitionEaseInOut;
+}
+%all-a {
+	text-decoration: none;
+    color: #000;
+    outline: none;
+    @include opacity(0.8);
+    @include filter(80);
+}
+%all-borderNo {
+	border: none;
+}
+
 body {
 	color: $body-color;
 	padding-top: 102px;
@@ -75,17 +89,6 @@ header {
 	&.navbar-fixed-top{
 		z-index: 3;
 	}
-}
-
-%all-transition {
-	@include transitionEaseInOut;
-}
-%all-a {
-	text-decoration: none;
-    color: #000;
-    outline: none;
-    @include opacity(0.8);
-    @include filter(80);
 }
 
 a {
@@ -880,6 +883,55 @@ footer {
 
 				&:focus {
 					@extend %all-pillsActiveA;
+				}
+			}
+		}
+	}
+}
+
+/**
+ * download
+ */
+.downloadpanel {
+	margin-bottom: 20px;
+
+	h2 {
+		padding-left: 10px;
+		border-left: 6px solid #333;
+	}
+
+	.download-content {
+		padding-top: 20px;
+	}
+
+	.download-wrap {
+		padding-top: 22px;
+		background-color: #f0f0f0;
+		
+		> div {
+			.row {
+				margin: 0 0 22px;
+			}
+		}
+
+		.download {
+			font-size: 16px;
+
+			> p {
+				> span {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	@include maxWidth($screen-xs-max) {
+		.download-wrap {
+			.download {
+				margin-top: 10px;
+
+				.btns {
+					text-align: right;
 				}
 			}
 		}

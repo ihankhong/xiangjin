@@ -1,31 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
 
-body {
-  color: #333;
-  padding-top: 102px;
-  font-family: "Raleway", "Microsoft JhengHei", sans-serif;
-}
-
-@media all and (min-width: 450px) and (max-width: 991px) {
-  body {
-    padding-top: 125px;
-  }
-}
-
-@media all and (max-width: 449px) {
-  body {
-    padding-top: 100px;
-  }
-}
-
-header.navbar {
-  border: none;
-}
-
-header.navbar-fixed-top {
-  z-index: 3;
-}
-
 a,
 h3,
 h3:after,
@@ -59,6 +33,32 @@ a:active {
   filter: alpha(opacity=80);
   -webkit-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+body {
+  color: #333;
+  padding-top: 102px;
+  font-family: "Raleway", "Microsoft JhengHei", sans-serif;
+}
+
+@media all and (min-width: 450px) and (max-width: 991px) {
+  body {
+    padding-top: 125px;
+  }
+}
+
+@media all and (max-width: 449px) {
+  body {
+    padding-top: 100px;
+  }
+}
+
+header.navbar {
+  border: none;
+}
+
+header.navbar-fixed-top {
+  z-index: 3;
 }
 
 h4,
@@ -780,5 +780,49 @@ footer .footer-contact > div span > a:hover {
 .nav-pills > li > a > i {
   font-size: 14px;
   margin-right: 5px;
+}
+
+/**
+ * download
+ */
+
+.downloadpanel {
+  margin-bottom: 20px;
+}
+
+.downloadpanel h2 {
+  padding-left: 10px;
+  border-left: 6px solid #333;
+}
+
+.downloadpanel .download-content {
+  padding-top: 20px;
+}
+
+.downloadpanel .download-wrap {
+  padding-top: 22px;
+  background-color: #f0f0f0;
+}
+
+.downloadpanel .download-wrap > div .row {
+  margin: 0 0 22px;
+}
+
+.downloadpanel .download-wrap .download {
+  font-size: 16px;
+}
+
+.downloadpanel .download-wrap .download > p > span {
+  font-size: 14px;
+}
+
+@media all and (max-width: 767px) {
+  .downloadpanel .download-wrap .download {
+    margin-top: 10px;
+  }
+
+  .downloadpanel .download-wrap .download .btns {
+    text-align: right;
+  }
 }
 

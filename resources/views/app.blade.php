@@ -76,7 +76,7 @@
                                         <li><a href="{{ route('news') }}">最新消息</a></li>
                                         <li><a href="{{ route('product') }}">產品介紹</a></li>
                                         <li><a href="{{ route('rddesign') }}">研發設計</a></li>
-                                        <li><a data-toggle="tab" href="#menu2">電子型錄下載</a></li>
+                                        <li><a href="{{ route('download') }}">電子型錄下載</a></li>
                                         <li><a data-toggle="tab" href="#menu2">聯絡我們</a></li>
                                     </ul>
                                 </div>
