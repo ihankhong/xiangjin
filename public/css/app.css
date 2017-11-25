@@ -184,9 +184,6 @@ h5 {
 
 nav {
   max-height: 50px;
-}
-
-nav .container {
   position: relative;
   z-index: 3;
 }
@@ -291,6 +288,10 @@ nav ul.navbar-nav > li:first-child a {
   nav .logo {
     position: relative;
     top: 0;
+  }
+
+  nav .navbar-collapse {
+    background-color: #fff;
   }
 
   nav .navbar-collapse .row > div {
@@ -756,6 +757,11 @@ footer .footer-contact > div span > a:hover {
   .tabpanel .sidebar h4,
   .tabpanel .sidebar h5 {
     background-repeat: unset;
+  }
+
+  .tabpanel .sidebar ul {
+    height: 188px;
+    overflow: scroll;
   }
 }
 
