@@ -13,7 +13,8 @@ nav ul.navbar-nav > li a,
 .tabpanel .tab-content .btns .back-btn,
 .nav-pills > li,
 .nav-pills > li > a,
-.nav-pills > li.active > a {
+.nav-pills > li.active > a,
+.contactpanel form button {
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -33,6 +34,13 @@ a:active {
   filter: alpha(opacity=80);
   -webkit-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.tabpanel .tab-content h2,
+.downloadpanel h2,
+.contactpanel h2 {
+  padding-left: 10px;
+  border-left: 6px solid #333;
 }
 
 body {
@@ -568,11 +576,6 @@ footer .footer-contact > div span > a:hover {
   background: url(/images/page/sidebar/bottom-arrow.png) no-repeat center center;
 }
 
-.tabpanel .tab-content h2 {
-  padding-left: 10px;
-  border-left: 6px solid #333;
-}
-
 .tabpanel .tab-content .content {
   font-size: 16px;
 }
@@ -701,6 +704,10 @@ footer .footer-contact > div span > a:hover {
   padding-top: 20px;
 }
 
+.tabpanel .tab-content .news-wrap .wrap .btns a {
+  background-color: #3666af;
+}
+
 .tabpanel .tab-content .news-wrap .wrap:hover {
   background-color: #f0f0f0;
 }
@@ -790,11 +797,6 @@ footer .footer-contact > div span > a:hover {
   margin-bottom: 20px;
 }
 
-.downloadpanel h2 {
-  padding-left: 10px;
-  border-left: 6px solid #333;
-}
-
 .downloadpanel .download-content {
   padding-top: 20px;
 }
@@ -824,5 +826,54 @@ footer .footer-contact > div span > a:hover {
   .downloadpanel .download-wrap .download .btns {
     text-align: right;
   }
+}
+
+/**
+ * contact
+ */
+
+.contactpanel {
+  margin-bottom: 20px;
+}
+
+.contactpanel form {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.contactpanel form .form-group label {
+  padding-left: 20px;
+  position: relative;
+}
+
+.contactpanel form .form-group label:before {
+  content: "\F04B";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.contactpanel form button {
+  width: 10%;
+  font-size: 16px;
+  background-color: #1d2088;
+}
+
+.contactpanel form button[type="reset"] {
+  margin-right: 20px;
+}
+
+.contactpanel form button:hover {
+  background-color: #2d308e;
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  filter: alpha(opacity=80);
+  -webkit-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 

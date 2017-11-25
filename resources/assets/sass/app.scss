@@ -35,6 +35,17 @@
 	-o-border-radius: #{$size}px;
 }
 
+@mixin leftIcon($content) {
+	content: $content;
+	font-family: FontAwesome;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
 @mixin rangeWidth($minWidth,$maxWidth) {
 	@media all and (min-width:$minWidth) and (max-width: $maxWidth) {
         @content;
@@ -65,6 +76,10 @@
 }
 %all-borderNo {
 	border: none;
+}
+%all-h2Title {
+	padding-left: 10px;
+	border-left: 6px solid #333;
 }
 
 body {
@@ -646,8 +661,7 @@ footer {
 
 	.tab-content {
 		h2 {
-			padding-left: 10px;
-			border-left: 6px solid #333;
+			@extend %all-h2Title;
 		}
 
 		.content {
@@ -710,14 +724,7 @@ footer {
 							position: relative;
 
 							&:before {
-								content: "\f04b";
-								font-family: FontAwesome;
-								display: inline-block;
-								position: absolute;
-								left: 0;
-								text-rendering: auto;
-							  	-webkit-font-smoothing: antialiased;
-							  	-moz-osx-font-smoothing: grayscale;
+								@include leftIcon("\f04b");
 							}
 						}
 					}
@@ -770,6 +777,10 @@ footer {
 
 				.btns {
 					padding-top: 20px;
+
+					a {
+						background-color: #3666af;
+					}
 				}
 
 				&:hover {
@@ -896,8 +907,7 @@ footer {
 	margin-bottom: 20px;
 
 	h2 {
-		padding-left: 10px;
-		border-left: 6px solid #333;
+		@extend %all-h2Title;
 	}
 
 	.download-content {
@@ -933,6 +943,50 @@ footer {
 				.btns {
 					text-align: right;
 				}
+			}
+		}
+	}
+}
+
+/**
+ * contact
+ */
+.contactpanel {
+	margin-bottom: 20px;
+
+	h2 {
+		@extend %all-h2Title;
+	}
+
+	form {
+		margin-top: 20px;
+		font-size: 16px;
+
+		.form-group {
+			label {
+				padding-left: 20px;
+				position: relative;
+
+				&:before {
+					@include leftIcon("\f04b");
+				}
+			}
+		}
+
+		button {
+			@extend %all-transition;
+			width: 10%;
+			font-size: 16px;
+			background-color: #1d2088;
+
+			&[type="reset"] {
+				margin-right: 20px;
+			}
+
+			&:hover {
+				background-color: #2d308e;
+				@include opacity(0.8);
+    			@include filter(80);
 			}
 		}
 	}
