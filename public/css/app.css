@@ -36,6 +36,7 @@ input,
 nav ul.navbar-nav > li a,
 .index-block .row > a > div span,
 .tabpanel .tab-content .product-wrap a:hover .wrap,
+.tabpanel .tab-content .btns .back-btn,
 .nav-pills > li,
 .nav-pills > li > a,
 .nav-pills > li.active > a {
@@ -58,6 +59,15 @@ a:active {
   filter: alpha(opacity=80);
   -webkit-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+h4,
+h5 {
+  font-weight: 700;
+}
+
+.btns {
+  margin-top: 10px;
 }
 
 /*
@@ -536,18 +546,19 @@ footer .footer-contact > div span > a:hover {
   background-color: #efefef;
 }
 
-.tabpanel .sidebar h4 {
+.tabpanel .sidebar h4,
+.tabpanel .sidebar h5 {
   height: 80px;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 35px;
   font-size: 20px;
-  font-weight: 700;
   text-align: center;
   background: url(/images/page/sidebar/title-bg.jpg) no-repeat center center;
 }
 
-.tabpanel .sidebar h4:after {
+.tabpanel .sidebar h4:after,
+.tabpanel .sidebar h5:after {
   content: "";
   display: block;
   height: 20px;
@@ -566,17 +577,19 @@ footer .footer-contact > div span > a:hover {
   font-size: 16px;
 }
 
-.tabpanel .tab-content .product-wrap h4 {
+.tabpanel .tab-content .product-wrap h4,
+.tabpanel .tab-content .product-wrap h5 {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: 700;
 }
 
-.tabpanel .tab-content .product-wrap h4 > i {
+.tabpanel .tab-content .product-wrap h4 > i,
+.tabpanel .tab-content .product-wrap h5 > i {
   margin-right: 5px;
 }
 
-.tabpanel .tab-content .product-wrap h4 > span {
+.tabpanel .tab-content .product-wrap h4 > span,
+.tabpanel .tab-content .product-wrap h5 > span {
   text-transform: uppercase;
 }
 
@@ -593,7 +606,6 @@ footer .footer-contact > div span > a:hover {
   padding-top: 11px;
   padding-bottom: 11px;
   font-size: 16px;
-  font-weight: 700;
   background-color: #f0f0f0;
 }
 
@@ -665,7 +677,6 @@ footer .footer-contact > div span > a:hover {
 .tabpanel .tab-content .product-wrap .wrap h5 {
   color: #333;
   font-size: 16px;
-  font-weight: 700;
 }
 
 .tabpanel .tab-content .product-wrap a:hover .wrap {
@@ -686,16 +697,36 @@ footer .footer-contact > div span > a:hover {
   border-bottom: 1px solid #f0f0f0;
 }
 
-.tabpanel .tab-content .news-wrap .wrap h4 {
-  font-weight: 700;
-}
-
 .tabpanel .tab-content .news-wrap .wrap .btns {
   padding-top: 20px;
 }
 
 .tabpanel .tab-content .news-wrap .wrap:hover {
   background-color: #f0f0f0;
+}
+
+.tabpanel .tab-content .news-wrap .article {
+  margin-top: 20px;
+}
+
+.tabpanel .tab-content .news-wrap .article h4,
+.tabpanel .tab-content .news-wrap .article h5 {
+  color: #0448ac;
+}
+
+.tabpanel .tab-content .news-wrap .article label {
+  display: block;
+}
+
+.tabpanel .tab-content .btns .back-btn {
+  color: #0448ac;
+  font-size: 16px;
+}
+
+.tabpanel .tab-content .btns .back-btn img {
+  width: 14px;
+  margin-bottom: 2px;
+  margin-right: 5px;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -715,13 +746,15 @@ footer .footer-contact > div span > a:hover {
     min-height: auto;
   }
 
-  .tabpanel .sidebar h4 {
+  .tabpanel .sidebar h4,
+  .tabpanel .sidebar h5 {
     background-repeat: unset;
   }
 }
 
 @media all and (max-width: 449px) {
-  .tabpanel .sidebar h4:after {
+  .tabpanel .sidebar h4:after,
+  .tabpanel .sidebar h5:after {
     background-repeat: repeat;
   }
 }

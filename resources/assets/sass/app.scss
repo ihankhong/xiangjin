@@ -112,6 +112,14 @@ h3 {
 	}
 }
 
+h4 {
+	font-weight: 700;
+}
+
+h5 {
+	@extend h4;
+}
+
 img {
 	@extend %all-transition;
 }
@@ -122,6 +130,10 @@ li {
 
 input {
 	@extend %all-transition;
+}
+
+.btns {
+	margin-top: 10px;
 }
 
 /*
@@ -614,7 +626,6 @@ footer {
 		    margin-bottom: 0;
 		    padding-top: 35px;
 		    font-size: 20px;
-		    font-weight: 700;
 		    text-align: center;
 			background: url(#{$img-path}page/sidebar/title-bg.jpg) no-repeat center center;
 
@@ -644,7 +655,6 @@ footer {
 			h4 {
 				padding-top: 10px;
 				padding-bottom: 10px;
-				font-weight: 700;
 
 				> i {
 					margin-right: 5px;
@@ -670,7 +680,6 @@ footer {
 						padding-top: 11px;
 						padding-bottom: 11px;
 						font-size: 16px;
-						font-weight: 700;
 						background-color: #f0f0f0;
 
 						span {
@@ -731,7 +740,6 @@ footer {
 				h5 {
 					color: #333;
 					font-size: 16px;
-					font-weight: 700;
 				}
 			}
 
@@ -757,10 +765,6 @@ footer {
 				padding-bottom: 10px;
 				border-bottom: 1px solid #f0f0f0;
 
-				h4 {
-					font-weight: 700;
-				}
-
 				.btns {
 					padding-top: 20px;
 				}
@@ -768,6 +772,32 @@ footer {
 				&:hover {
 					background-color: #f0f0f0;
 				}
+			}
+
+			.article {
+				margin-top: 20px;
+
+				h4 {
+					color: #0448ac;
+				}
+
+				label {
+					display: block;
+				}
+			}
+		}
+
+		.btns {
+			.back-btn {
+				@extend %all-transition;
+				color: #0448ac;
+				font-size: 16px;
+
+				img {
+					width: 14px;
+					margin-bottom: 2px;
+					margin-right: 5px;
+				}	
 			}
 		}
 	}
