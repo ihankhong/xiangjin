@@ -23,3 +23,4 @@ Route::get('product', 'ProductController@index')->name('product');
 Route::get('product/single', 'ProductController@single')->name('product.single');
 Route::get('download', 'DownloadController@index')->name('download');
 Route::get('contact', 'ContactController@index')->name('contact');
+Route::get('search', 'SearchController@index')->name('search');
