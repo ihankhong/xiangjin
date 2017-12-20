@@ -38,7 +38,8 @@ a:active {
 
 .tabpanel .tab-content h2,
 .downloadpanel h2,
-.contactpanel h2 {
+.contactpanel h2,
+.searchpanel .tab-content > h2 {
   padding-left: 10px;
   border-left: 6px solid #333;
 }
@@ -881,5 +882,33 @@ footer .footer-contact > div span > a:hover {
   filter: alpha(opacity=80);
   -webkit-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+/**
+ * search
+ */
+
+.searchpanel {
+  margin-bottom: 20px;
+}
+
+.searchpanel .linebar {
+  border: 5px solid #0069b7;
+}
+
+.searchpanel h4,
+.searchpanel h5 {
+  margin-top: 30px;
+}
+
+.searchpanel .tab-content .row .list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #333;
+}
+
+.searchpanel .tab-content .row:last-child .list {
+  border-bottom-style: solid;
+  border-bottom-color: #c9c9c9;
 }
 

@@ -1,4 +1,8 @@
-<section class="tabpanel">
+<section class="searchpanel">
+    <div class="container-full">
+        <div class="linebar"></div>
+        <h4 class="text-center">您搜尋【<span class="keyword">技術</span>】關鍵字，相關的有<span class="num">5</span>筆</h4>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
@@ -75,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
     </div>
-</section>    
+</section>
