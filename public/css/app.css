@@ -103,7 +103,7 @@ h5 {
 .topbar {
   margin-bottom: 2px;
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 
 .topbar .container {
@@ -137,6 +137,12 @@ h5 {
 
 .topbar .lang .dropdown-menu {
   min-width: 140px;
+}
+
+@media all and (min-width: 768px) {
+  .topbar .lang .dropdown-menu {
+    background-color: #fff;
+  }
 }
 
 @media all and (max-width: 1199px) {
@@ -184,7 +190,6 @@ h5 {
  */
 
 nav {
-  max-height: 50px;
   position: relative;
   z-index: 3;
 }
@@ -212,6 +217,12 @@ nav ul.navbar-nav > li a:hover {
 
 nav ul.navbar-nav > li:first-child a {
   border-left: 0;
+}
+
+@media all and (min-width: 768px) {
+  nav {
+    max-height: 50px;
+  }
 }
 
 @media all and (min-width: 992px) {
@@ -907,8 +918,18 @@ footer .footer-contact > div span > a:hover {
   border-bottom: 1px dashed #333;
 }
 
+.searchpanel .tab-content .row .list .content {
+  font-size: 16px;
+}
+
 .searchpanel .tab-content .row:last-child .list {
   border-bottom-style: solid;
   border-bottom-color: #c9c9c9;
+}
+
+@media all and (max-width: 767px) {
+  .searchpanel .tab-content .list img {
+    margin-bottom: 10px;
+  }
 }
 

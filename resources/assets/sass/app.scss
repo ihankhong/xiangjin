@@ -176,7 +176,7 @@ input {
 .topbar {
 	margin-bottom: 2px;
 	position: relative;
-	z-index: 3;
+	z-index: 4;
 
 	.container {
 		position: relative;
@@ -212,6 +212,14 @@ input {
 
 		.dropdown-menu {
 			min-width: 140px;
+		}
+	}
+
+	@include minWidth($screen-sm-min) {
+		.lang {
+			.dropdown-menu {
+				background-color: #fff;
+			}
 		}
 	}
 
@@ -257,7 +265,6 @@ input {
  * navbar
  */
 nav {
-	max-height: 50px;
 	position: relative;
 	z-index: 3;
 
@@ -291,6 +298,10 @@ nav {
 				}
 			}
 		}
+	}
+
+	@include minWidth($screen-sm-min) {
+		max-height: 50px;
 	}
 
 	@include minWidth($screen-md-min) {
@@ -1020,12 +1031,26 @@ footer {
 				padding-top: 20px;
 				padding-bottom: 20px;
 				border-bottom: 1px dashed #333;
+
+				.content {
+					font-size: 16px;
+				}
 			}
 
 			&:last-child {
 				.list {
 					border-bottom-style: solid;
 					border-bottom-color: #c9c9c9;
+				}
+			}
+		}
+	}
+
+	@include maxWidth($screen-xs-max) {
+		.tab-content {
+			.list {
+				img {
+					margin-bottom: 10px;
 				}
 			}
 		}
